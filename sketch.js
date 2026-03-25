@@ -127,7 +127,7 @@ function draw() {
 
   let isTouching = flowers.some(f => dist(mouseX, mouseY, f.x, f.y) < detectionRadius);
   let targetDim = isTouching ? fullScreenDim : baseCircleDim;
-  let lerpSpeed = (targetDim > currentCircleDim) ? 0.002 : 0.15;
+  let lerpSpeed = (targetDim > currentCircleDim) ? 0.003 : 0.15;
   currentCircleDim = lerp(currentCircleDim, targetDim, lerpSpeed);
 
   flowers.forEach(f => f.drawStem());
