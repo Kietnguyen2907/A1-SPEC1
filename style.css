@@ -1,0 +1,43 @@
+
+
+body {
+    margin: 0;
+    padding: 0;
+    overflow: hidden;
+    background-color: black;
+}
+
+#ui-layer {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    /* Quan trọng: cho phép chuột xuyên qua chữ để tương tác với canvas bên dưới */
+    pointer-events: none; 
+    color: rgba(255, 255, 255);
+    font-family: aktiv-grotesk-extended, sans-serif; 
+    font-weight: 300;
+    z-index: 10;
+}
+
+.quote {
+    position: absolute;
+    top: 60px;
+    right: 50px;
+    text-align: right;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.bottom-title {
+    position: absolute;
+    bottom: 50px;
+    left: 50px;
+    font-size: 18px;
+    line-height: 1.2;
+}
+
+.italic {
+    font-style: italic;
+}
